@@ -1,0 +1,68 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: anxious path
+  steps:
+  - intent: feeling_anxious
+  - action: utter_anxious
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: depressed path
+  steps:
+  - intent: feeling_depressed
+  - action: utter_depressed
+  - action: utter_offer_help
+  - intent: ask_about_therapy
+  - action: utter_about_therapy
+
+- story: stressed path
+  steps:
+  - intent: feeling_stressed
+  - action: utter_stressed
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_offer_help
+  - intent: ask_about_meditation
+  - action: utter_about_meditation
+
+- story: ask for help
+  steps:
+  - intent: ask_for_help
+  - action: utter_offer_help
+  - intent: ask_about_exercise
+  - action: utter_about_exercise
+
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_thank

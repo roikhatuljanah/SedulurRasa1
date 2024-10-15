@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - feeling_anxious
+  - feeling_depressed
+  - feeling_stressed
+  - ask_for_help
+  - ask_about_therapy
+  - ask_about_meditation
+  - ask_about_exercise
+  - thank
+
+responses:
+  utter_greet:
+  - text: "Halo! Saya di sini untuk membantu Anda. Bagaimana perasaan Anda hari ini?"
+
+  utter_goodbye:
+  - text: "Sampai jumpa! Ingat, Anda tidak sendirian dalam perjalanan ini."
+
+  utter_happy:
+  - text: "Senang mendengar Anda merasa baik! Teruslah bersemangat!"
+
+  utter_cheer_up:
+  - text: "Saya mengerti Anda sedang merasa sedih. Ingatlah bahwa perasaan ini sementara dan akan berlalu. Mungkin mencoba aktivitas yang Anda sukai bisa membantu?"
+
+  utter_did_that_help:
+  - text: "Apakah saran saya membantu?"
+
+  utter_iamabot:
+  - text: "Saya adalah chatbot yang dirancang untuk membantu dengan masalah kesehatan mental."
+
+  utter_anxious:
+  - text: "Kecemasan bisa sangat mengganggu. Mari coba latihan pernapasan dalam: Tarik napas selama 4 detik, tahan selama 7 detik, dan hembuskan selama 8 detik. Ulangi beberapa kali."
+
+  utter_depressed:
+  - text: "Saya turut prihatin Anda merasa depresi. Ingatlah bahwa meminta bantuan adalah tanda kekuatan, bukan kelemahan. Apakah Anda sudah mempertimbangkan untuk berbicara dengan profesional?"
+
+  utter_stressed:
+  - text: "Stres bisa sangat berat. Cobalah teknik 5-4-3-2-1: Sebutkan 5 hal yang Anda lihat, 4 hal yang Anda sentuh, 3 hal yang Anda dengar, 2 hal yang Anda cium, dan 1 hal yang Anda rasakan. Ini bisa membantu menenangkan pikiran."
+
+  utter_offer_help:
+  - text: "Ada beberapa cara yang bisa membantu meningkatkan kesehatan mental. Apakah Anda ingin tahu tentang terapi, meditasi, atau olahraga?"
+
+  utter_about_therapy:
+  - text: "Terapi bisa sangat membantu dalam mengelola kesehatan mental. Terapis profesional dapat memberikan alat dan strategi untuk mengatasi berbagai masalah. Apakah Anda tertarik untuk mencari terapis?"
+
+  utter_about_meditation:
+  - text: "Meditasi adalah cara yang bagus untuk menenangkan pikiran dan mengurangi stres. Mulailah dengan 5 menit sehari, fokus pada napas Anda. Ada banyak aplikasi dan video panduan yang bisa membantu Anda memulai."
+
+  utter_about_exercise:
+  - text: "Olahraga teratur dapat sangat membantu kesehatan mental. Ini melepaskan endorfin yang membuat Anda merasa lebih baik. Mulailah dengan aktivitas ringan seperti jalan kaki 15 menit sehari."
+
+  utter_thank:
+  - text: "Sama-sama! Saya senang bisa membantu. Ingat, kesehatan mental Anda penting dan Anda berhak mendapatkan dukungan."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,113 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hai
+    - halo
+    - hi
+    - selamat pagi
+    - selamat siang
+    - selamat malam
+
+- intent: goodbye
+  examples: |
+    - bye
+    - sampai jumpa
+    - selamat tinggal
+    - sudah dulu ya
+
+- intent: affirm
+  examples: |
+    - ya
+    - tentu
+    - benar
+    - oke
+    - baiklah
+
+- intent: deny
+  examples: |
+    - tidak
+    - nggak
+    - enggak
+    - jangan
+
+- intent: mood_great
+  examples: |
+    - sempurna
+    - sangat baik
+    - luar biasa
+    - saya merasa hebat
+    - saya bahagia
+    - saya senang
+
+- intent: mood_unhappy
+  examples: |
+    - sedih
+    - sangat sedih
+    - tidak bahagia
+    - buruk
+    - sangat buruk
+    - saya merasa tidak baik
+    - hari yang berat
+
+- intent: feeling_anxious
+  examples: |
+    - saya merasa cemas
+    - saya khawatir
+    - terlalu banyak kekhawatiran
+    - saya sangat gelisah
+    - panik
+    - saya merasa panik
+
+- intent: feeling_depressed
+  examples: |
+    - saya merasa depresi
+    - saya sangat sedih
+    - saya tidak memiliki harapan
+    - saya merasa kosong
+    - saya merasa tidak berharga
+
+- intent: feeling_stressed
+  examples: |
+    - saya stres
+    - saya merasa tertekan
+    - terlalu banyak tekanan
+    - saya kewalahan
+    - saya tidak bisa menangani ini
+
+- intent: ask_for_help
+  examples: |
+    - saya butuh bantuan
+    - bisakah kamu membantu saya
+    - apa yang harus saya lakukan
+    - saya tidak tahu harus berbuat apa
+    - tolong saya
+
+- intent: ask_about_therapy
+  examples: |
+    - apa itu terapi
+    - bagaimana cara mendapatkan terapis
+    - apakah terapi membantu
+    - bisakah kamu ceritakan tentang terapi
+
+- intent: ask_about_meditation
+  examples: |
+    - apa itu meditasi
+    - bagaimana cara bermeditasi
+    - apakah meditasi efektif
+    - bisakah kamu jelaskan tentang meditasi
+
+- intent: ask_about_exercise
+  examples: |
+    - apakah olahraga membantu kesehatan mental
+    - olahraga apa yang baik untuk kesehatan mental
+    - bagaimana olahraga bisa membantu
+
+- intent: thank
+  examples: |
+    - terima kasih
+    - makasih
+    - thanks
+    - terima kasih banyak
+    - sangat membantu

@@ -1,0 +1,49 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - halo
+    - hai
+    - selamat pagi
+    - selamat siang
+    - selamat malam
+
+- intent: goodbye
+  examples: |
+    - sampai jumpa
+    - selamat tinggal
+    - bye
+    - dadah
+
+- intent: affirm
+  examples: |
+    - ya
+    - tentu
+    - benar
+
+- intent: deny
+  examples: |
+    - tidak
+    - nggak
+    - jangan
+
+- intent: mood_great
+  examples: |
+    - baik
+    - senang
+    - luar biasa
+    - fantastis
+
+- intent: mood_unhappy
+  examples: |
+    - sedih
+    - tidak baik
+    - kecewa
+    - marah
+
+- intent: bot_challenge
+  examples: |
+    - apakah kamu bot?
+    - apakah kamu manusia?
+    - saya berbicara dengan bot?
