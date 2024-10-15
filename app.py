@@ -10,9 +10,14 @@ import asyncio
 import plotly.graph_objects as go
 from collections import Counter
 from datetime import datetime, timedelta
-from rasa.core.agent import Agent
-from rasa.shared.utils.io import raise_warning
-from rasa.utils.endpoints import EndpointConfig
+try:
+    from rasa.core.agent import Agent
+    from rasa.shared.utils.io import raise_warning
+    from rasa.utils.endpoints import EndpointConfig
+    RASA_AVAILABLE = True
+except ImportError:
+    print("Rasa tidak dapat diimpor. Menggunakan fallback.")
+    RASA_AVAILABLE = False
 
 # Load Rasa agent
 model_path = "./models"  # Sesuaikan dengan path model Rasa Anda
