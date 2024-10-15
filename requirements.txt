@@ -4,3 +4,5 @@ plotly==5.18.0
 matplotlib==3.8.2
 seaborn==0.13.2
 python-dateutil==2.8.2
+rasa==3.5.14
+rasa-sdk==3.5.1
