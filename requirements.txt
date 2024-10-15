@@ -6,3 +6,4 @@ seaborn
 python-dateutil==2.8.2
 rasa==3.5.14
 rasa-sdk==3.5.1
+protobuf==3.19.6
